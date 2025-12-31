@@ -167,15 +167,15 @@
         <p class="subtitle">Chào mừng bạn đến với hệ thống điểm danh sinh viên</p>
         
         <div id="status" class="status loading">
-            🔄 Đang mở ứng dụng...
+            Đang mở ứng dụng...
         </div>
         
         <button id="openAppBtn" class="btn" onclick="openApp()">
-            📱 Mở ứng dụng ngay
+            Mở ứng dụng ngay
         </button>
         
         <div class="instructions">
-            <h3>📋 Hướng dẫn nếu ứng dụng không tự động mở:</h3>
+            <h3>Hướng dẫn nếu ứng dụng không tự động mở:</h3>
             <ol>
                 <li>Đảm bảo bạn đã cài đặt ứng dụng <strong>Iris Sample</strong> trên thiết bị Android</li>
                 <li>Click vào nút <strong>"Mở ứng dụng ngay"</strong> ở trên</li>
@@ -207,12 +207,12 @@
             
             // Update status
             statusEl.className = 'status success';
-            statusEl.innerHTML = '✅ Đang chuyển đến ứng dụng...';
+            statusEl.innerHTML = 'Đang chuyển đến ứng dụng...';
             
             // Fallback: Nếu sau 2 giây không chuyển được, hiển thị thông báo
             setTimeout(function() {
                 statusEl.className = 'status error';
-                statusEl.innerHTML = '⚠️ Không thể mở ứng dụng. Vui lòng kiểm tra xem bạn đã cài đặt ứng dụng chưa?';
+                statusEl.innerHTML = 'Không thể mở ứng dụng. Vui lòng kiểm tra xem bạn đã cài đặt ứng dụng chưa?';
             }, 2000);
         }
         
@@ -244,7 +244,7 @@
                 // User đã switch sang app
                 const statusEl = document.getElementById('status');
                 statusEl.className = 'status success';
-                statusEl.innerHTML = '✅ Ứng dụng đã được mở!';
+                statusEl.innerHTML = 'Ứng dụng đã được mở!';
             }
         });
     </script>
